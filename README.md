@@ -16,6 +16,10 @@ The trade-off between inference speed and accuracy for real-time semantic segmen
 
 ## Environment
 ```
+CUDA_HOME=/opt/nvidia/hpc_sdk/Linux_x86_64/25.1/cuda
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${CUDA_HOME}/lib64
+PATH=$PATH:${CUDA_HOME}/bin
+
 python==3.8.10
 pytorch==1.12.1
 torchvision==0.13.1
