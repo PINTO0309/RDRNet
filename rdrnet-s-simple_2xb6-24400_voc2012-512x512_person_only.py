@@ -22,7 +22,7 @@ model = dict(
     ),
     decode_head=dict(
         type='DDRHead',
-        in_channels=32 * 4,
+        in_channels=32 * 8, #32 * 4,
         channels=64,
         dropout_ratio=0.,
         num_classes=2,
@@ -89,7 +89,7 @@ tta_pipeline = [
         ])
 ]
 train_dataloader = dict(
-    batch_size=24,
+    batch_size=8,
     num_workers=8,
     persistent_workers=True,
     sampler=dict(type='InfiniteSampler', shuffle=True),

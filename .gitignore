@@ -9,3 +9,6 @@ mmsegmentation/mmseg/__pycache__/
 mmsegmentation/mmseg/*/__pycache__/
 */__pycache__/
 .mim/
+__pycache__/
+*.log
+weight/
