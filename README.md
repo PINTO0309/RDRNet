@@ -79,15 +79,15 @@ wget https://github.com/PINTO0309/RDRNet/releases/download/pre-trained-weights/r
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py \
---work-dir ./weight/seg
+--work-dir ./weight/seg_512x512
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
---work-dir ./weight/seg
+--work-dir ./weight/seg_512x640
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
 rdrnet-s-simple_2xb6-24400_voc2012-384x512_person_only.py \
---work-dir ./weight/seg
+--work-dir ./weight/seg_384x512
 ```
 
 Multiple gpus for train:
