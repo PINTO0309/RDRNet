@@ -26,6 +26,7 @@ torchvision==0.13.1
 mmengine==0.7.3
 mmcv==2.0.0
 mmsegmentation==1.0.0
+yapf==0.40.1
 ```
 
 ## Install
