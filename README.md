@@ -108,6 +108,20 @@ rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 --work-dir ./weight/seg_512x640
 ```
 
+<details><summary>seg_512x640</summary>
+
+```
++------------+-------+-------+
+|   Class    |  IoU  |  Acc  |
++------------+-------+-------+
+| background | 88.66 | 96.34 |
+|   person   |  48.5 | 57.24 |
++------------+-------+-------+
+
+```
+</details>
+
+
 Multiple gpus for train:
 ```shell
 CUDA_VISIBLE_DEVICES=0,1 bash ./mmsegmentation/tools/dist_train.sh rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py 2 --work-dir ./weight/seg
