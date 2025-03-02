@@ -34,11 +34,11 @@ docker build -t mmseg .
 cd ../..
 
 docker run \
---rm \
--it \
---gpus all \
+--rm -it --gpus all \
 -v `pwd`:/RDRNet \
 mmseg
+
+cd /RDRNet
 ```
 
 ## Install
