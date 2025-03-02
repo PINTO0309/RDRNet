@@ -134,6 +134,13 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 ## Testing
 ```shell
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py ./weight/seg/rdrnet_weight.pth
+
+###########
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py \
+rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
+./weight/seg_512x640/iter_24400.pth \
+--show-dir outputs
 ```
 
 Test in pycharm: If you want to test in pycharm, you can run it in test.py.
