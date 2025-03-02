@@ -138,6 +138,11 @@ CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py rdrnet-s-simple_2xb
 ###########
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py \
+rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py \
+./weight/seg_512x512/iter_24400.pth \
+--show-dir outputs
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 ./weight/seg_512x640/iter_24400.pth \
 --show-dir outputs
