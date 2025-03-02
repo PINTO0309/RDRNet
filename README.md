@@ -52,6 +52,7 @@ RDRNet
 │   │   │   ├── ImageSets
 │   │   │   │   ├── Segmentation
 ├── rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py
+├── rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py
 ├── train.py
 ├── test.py
 ```
@@ -65,6 +66,8 @@ Pascal VOC 2012 could be downloaded from [here](http://host.robots.ox.ac.uk/pasc
 Single gpu for train:
 ```shell
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py --work-dir ./weight/seg
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py --work-dir ./weight/seg
 ```
 
 Multiple gpus for train:
