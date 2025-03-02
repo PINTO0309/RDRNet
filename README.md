@@ -16,12 +16,20 @@ The trade-off between inference speed and accuracy for real-time semantic segmen
 
 ## Environment
 ```
-python==3.8.10
-pytorch==1.12.1
-torchvision==0.13.1
-mmengine==0.7.3
-mmcv==2.0.0
-mmsegmentation==1.0.0
+cd mmsegmentation/docker
+docker build -t mmseg .
+cd ../..
+
+docker run \
+--rm -it --gpus all \
+-v `pwd`:/RDRNet \
+--ipc host \
+mmseg
+
+cd /RDRNet/mmsegmentation
+python setup.py install
+pip install -v -e .
+cd ..
 ```
 
 ## Install
@@ -52,6 +60,7 @@ RDRNet
 │   │   │   ├── ImageSets
 │   │   │   │   ├── Segmentation
 ├── rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py
+├── rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py
 ├── train.py
 ├── test.py
 ```
@@ -65,6 +74,9 @@ Pascal VOC 2012 could be downloaded from [here](http://host.robots.ox.ac.uk/pasc
 Single gpu for train:
 ```shell
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py --work-dir ./weight/seg
+
+wget https://github.com/PINTO0309/RDRNet/releases/download/pre-trained-weights/rdrnet-s-simple_mIoU-76.7.pth
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py --work-dir ./weight/seg
 ```
 
 Multiple gpus for train:
