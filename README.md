@@ -121,6 +121,7 @@ rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 ```
 </details>
 <details><summary>seg_512x512</summary>
+
 ```
 +------------+-------+-------+
 |   Class    |  IoU  |  Acc  |
@@ -129,6 +130,7 @@ rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 |   person   | 47.37 | 57.15 |
 +------------+-------+-------+
 ```
+
 </details>
 
 Multiple gpus for train:
