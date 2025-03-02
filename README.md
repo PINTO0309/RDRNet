@@ -23,6 +23,7 @@ cd ../..
 docker run \
 --rm -it --gpus all \
 -v `pwd`:/RDRNet \
+--ipc host \
 mmseg
 
 cd /RDRNet/mmsegmentation
