@@ -31,6 +31,14 @@ yapf==0.40.1
 ```
 cd mmsegmentation/docker
 docker build -t mmseg .
+cd ../..
+
+docker run \
+--rm \
+-it \
+--gpus all \
+-v `pwd`:/RDRNet \
+mmseg
 ```
 
 ## Install
