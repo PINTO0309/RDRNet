@@ -82,7 +82,7 @@ rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py \
 --work-dir ./weight/seg
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
-rdrnet-s-simple_2xb6-24400_voc2012-480x640_person_only.py \
+rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 --work-dir ./weight/seg
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
