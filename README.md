@@ -81,6 +81,28 @@ CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py \
 --work-dir ./weight/seg_512x512
 
+###########################
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-192x256_person_only.py \
+--work-dir ./weight/seg_192x256
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-256x384_person_only.py \
+--work-dir ./weight/seg_256x384
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-256x512_person_only.py \
+--work-dir ./weight/seg_256x512
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-384x512_person_only.py \
+--work-dir ./weight/seg_384x512
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-384x640_person_only.py \
+--work-dir ./weight/seg_384x640
+
+### v
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 --work-dir ./weight/seg_512x640
