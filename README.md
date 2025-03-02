@@ -76,7 +76,18 @@ Single gpu for train:
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py --work-dir ./weight/seg
 
 wget https://github.com/PINTO0309/RDRNet/releases/download/pre-trained-weights/rdrnet-s-simple_mIoU-76.7.pth
-CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py --work-dir ./weight/seg
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py \
+--work-dir ./weight/seg
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-480x640_person_only.py \
+--work-dir ./weight/seg
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
+rdrnet-s-simple_2xb6-24400_voc2012-384x512_person_only.py \
+--work-dir ./weight/seg
 ```
 
 Multiple gpus for train:
