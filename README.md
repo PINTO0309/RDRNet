@@ -38,7 +38,10 @@ docker run \
 -v `pwd`:/RDRNet \
 mmseg
 
-cd /RDRNet
+cd /RDRNet/mmsegmentation
+python setup.py install
+pip install -v -e .
+cd ..
 ```
 
 ## Install
