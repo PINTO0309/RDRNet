@@ -33,12 +33,13 @@ from .transforms import (CLAHE, AdjustGamma, BioMedical3DPad,
                          RandomRotFlip, Rerange, ResizeShortestEdge,
                          ResizeToMultiple, RGB2Gray, SegRescale)
 from .voc import PascalVOCDataset
+from .voc_person import PascalVOCPersonDataset
 from .camvid import CamVid
 
 # yapf: enable
 __all__ = [
     'BaseSegDataset', 'BioMedical3DRandomCrop', 'BioMedical3DRandomFlip',
-    'CityscapesDataset', 'PascalVOCDataset', 'ADE20KDataset',
+    'CityscapesDataset', 'PascalVOCDataset', 'PascalVOCPersonDataset', 'ADE20KDataset',
     'PascalContextDataset', 'PascalContextDataset59', 'ChaseDB1Dataset',
     'DRIVEDataset', 'HRFDataset', 'STAREDataset', 'DarkZurichDataset',
     'NightDrivingDataset', 'COCOStuffDataset', 'LoveDADataset',

@@ -1,5 +1,5 @@
 norm_cfg = dict(type='SyncBN', requires_grad=True, momentum=0.03, eps=0.001)
-crop_size = (512, 512)
+crop_size = (1280, 768)
 data_preprocessor = dict(
     type='SegDataPreProcessor',
     size=crop_size,
@@ -49,7 +49,7 @@ model = dict(
 # dataset settings
 dataset_type = 'PascalVOCPersonDataset'
 data_root = 'data/VOCdevkit/VOC2012'
-crop_size = (512, 512)
+crop_size = (1280, 768)
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations'),

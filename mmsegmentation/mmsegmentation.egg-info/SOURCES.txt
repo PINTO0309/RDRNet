@@ -871,6 +871,7 @@ mmseg/datasets/refuge.py
 mmseg/datasets/stare.py
 mmseg/datasets/synapse.py
 mmseg/datasets/voc.py
+mmseg/datasets/voc_person.py
 mmseg/datasets/transforms/__init__.py
 mmseg/datasets/transforms/formatting.py
 mmseg/datasets/transforms/loading.py
