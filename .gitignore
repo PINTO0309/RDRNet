@@ -12,3 +12,5 @@ mmsegmentation/mmseg/*/__pycache__/
 __pycache__/
 *.log
 weight/
+outputs/
+work_dirs/
