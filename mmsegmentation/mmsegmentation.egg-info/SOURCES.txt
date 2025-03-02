@@ -1,3 +1,4 @@
+LICENSE
 MANIFEST.in
 README.md
 setup.cfg
@@ -849,6 +850,7 @@ mmseg/apis/mmseg_inferencer.py
 mmseg/datasets/__init__.py
 mmseg/datasets/ade.py
 mmseg/datasets/basesegdataset.py
+mmseg/datasets/camvid.py
 mmseg/datasets/chase_db1.py
 mmseg/datasets/cityscapes.py
 mmseg/datasets/coco_stuff.py
@@ -890,6 +892,7 @@ mmseg/models/backbones/beit.py
 mmseg/models/backbones/bisenetv1.py
 mmseg/models/backbones/bisenetv2.py
 mmseg/models/backbones/cgnet.py
+mmseg/models/backbones/ddrnet.py
 mmseg/models/backbones/erfnet.py
 mmseg/models/backbones/fast_scnn.py
 mmseg/models/backbones/hrnet.py
@@ -900,6 +903,7 @@ mmseg/models/backbones/mobilenet_v2.py
 mmseg/models/backbones/mobilenet_v3.py
 mmseg/models/backbones/mscan.py
 mmseg/models/backbones/pidnet.py
+mmseg/models/backbones/rdrnet.py
 mmseg/models/backbones/resnest.py
 mmseg/models/backbones/resnet.py
 mmseg/models/backbones/resnext.py
@@ -916,6 +920,7 @@ mmseg/models/decode_heads/aspp_head.py
 mmseg/models/decode_heads/cascade_decode_head.py
 mmseg/models/decode_heads/cc_head.py
 mmseg/models/decode_heads/da_head.py
+mmseg/models/decode_heads/ddr_head.py
 mmseg/models/decode_heads/decode_head.py
 mmseg/models/decode_heads/dm_head.py
 mmseg/models/decode_heads/dnl_head.py

@@ -25,7 +25,7 @@ model = dict(
         in_channels=32 * 4,
         channels=64,
         dropout_ratio=0.,
-        num_classes=21,
+        num_classes=2,
         align_corners=False,
         norm_cfg=dict(type='SyncBN', requires_grad=True),
         loss_decode=[

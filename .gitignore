@@ -1,2 +1,11 @@
 data/
 data_/
+*.pth
+
+mmsegmentation/build/
+mmsegmentation/dist/
+mmsegmentation/mmseg/__pycache__/
+
+mmsegmentation/mmseg/*/__pycache__/
+*/__pycache__/
+.mim/
