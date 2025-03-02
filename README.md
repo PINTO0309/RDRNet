@@ -28,6 +28,10 @@ mmcv==2.0.0
 mmsegmentation==1.0.0
 yapf==0.40.1
 ```
+```
+cd mmsegmentation/docker
+docker build -t mmseg .
+```
 
 ## Install
 Please refer to [mmsegmentation](https://mmsegmentation.readthedocs.io/en/latest/get_started.html) for installation.
