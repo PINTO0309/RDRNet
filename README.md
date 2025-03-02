@@ -106,10 +106,6 @@ rdrnet-s-simple_2xb6-24400_voc2012-384x640_person_only.py \
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 --work-dir ./weight/seg_512x640
-
-CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/train.py \
-rdrnet-s-simple_2xb6-24400_voc2012-384x512_person_only.py \
---work-dir ./weight/seg_384x512
 ```
 
 Multiple gpus for train:
