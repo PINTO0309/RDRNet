@@ -120,7 +120,18 @@ rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
 
 ```
 </details>
+<details><summary>seg_512x512</summary>
 
+```
++------------+-------+-------+
+|   Class    |  IoU  |  Acc  |
++------------+-------+-------+
+| background | 88.16 | 95.82 |
+|   person   | 47.37 | 57.15 |
++------------+-------+-------+
+```
+
+</details>
 
 Multiple gpus for train:
 ```shell
@@ -136,6 +147,11 @@ see more details at [mmsegmentation](https://github.com/open-mmlab/mmsegmentatio
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py rdrnet-s-simple_2xb6-120k_cityscapes-1024x1024.py ./weight/seg/rdrnet_weight.pth
 
 ###########
+
+CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py \
+rdrnet-s-simple_2xb6-24400_voc2012-512x512_person_only.py \
+./weight/seg_512x512/iter_24400.pth \
+--show-dir outputs
 
 CUDA_VISIBLE_DEVICES=0 python ./mmsegmentation/tools/test.py \
 rdrnet-s-simple_2xb6-24400_voc2012-512x640_person_only.py \
