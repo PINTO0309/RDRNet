@@ -13,4 +13,6 @@ __pycache__/
 *.log
 weight/
 outputs/
+outputs_*/
 work_dirs/
+*.png
