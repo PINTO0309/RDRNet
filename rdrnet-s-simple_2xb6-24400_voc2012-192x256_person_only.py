@@ -3,8 +3,8 @@ crop_size = (256, 192)
 data_preprocessor = dict(
     type='SegDataPreProcessor',
     size=crop_size,
-    mean=[123.675, 116.28, 103.53],
-    std=[58.395, 57.12, 57.375],
+    mean=[119.850, 114.240, 104.040], # mean=[123.675, 116.28, 103.53],
+    std=[69.870, 68.595, 72.675], # VOC: std=[58.395, 57.12, 57.375],
     bgr_to_rgb=True,
     pad_val=0,
     seg_pad_val=255)
@@ -61,7 +61,7 @@ train_pipeline = [
     dict(type='RandomCrop', crop_size=crop_size, cat_max_ratio=0.75),
     dict(type='RandomFlip', prob=0.5),
     dict(type='PhotoMetricDistortion'),
-    dict(type='GenerateEdge', edge_width=4),
+    # dict(type='GenerateEdge', edge_width=4),
     dict(type='PackSegInputs')
 ]
 test_pipeline = [
@@ -130,8 +130,8 @@ log_level = 'INFO'
 load_from = './rdrnet-s-simple_mIoU-76.7.pth'
 resume = None
 tta_model = dict(type='SegTTAModel')
-max_iters = 24400
-interval = 2440
+max_iters = 73200 # 24400
+interval = 1000 # 2440
 optimizer = dict(type='SGD', lr=0.001, momentum=0.9, weight_decay=0.0005)
 optim_wrapper = dict(type='OptimWrapper', optimizer=optimizer, clip_grad=None)
 # learning policy
