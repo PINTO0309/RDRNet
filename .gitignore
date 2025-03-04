@@ -16,3 +16,4 @@ outputs/
 outputs_*/
 work_dirs/
 *.png
+*.json
